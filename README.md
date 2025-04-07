@@ -1,2 +1,9 @@
 # PawTracker
-PawTracker is a tool to manage pet care tasks such as grooming, medication, and vet visits with timely reminders.
+  
+## Purpose
+The Pet Care Scheduler is a Python-based application designed to help pet owners manage their pets, no matter how many pets and type of pet.
+
+## Features
+- Customizable schedules personalized for each pet
+- Notifications for upcoming tasks
+- Tracking of past activities
