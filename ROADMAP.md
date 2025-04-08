@@ -12,7 +12,7 @@
 
 - [x] **Task 3**: Create initial project structure in a new GitHub repository.
   - **Assigned to**: Bryant
-  - **Details**: Create folders and include a basic Python file (`main.py`) to start with.
+  - **Details**: Create folders for 'tests' and 'docs'.
 
 - [x] **Task 4**: Implement a basic reminder feature.
   - **Assigned to**: Bryant
