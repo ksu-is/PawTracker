@@ -23,3 +23,16 @@
   - **Details**: Filled out the expectations about PawTracker
 
 ---
+
+## Sprint 2 
+### Goal: Develop and Test Core Features
+- [ ] **Task 6**: Refine reminder feature with real data input.
+  - **Assigned to**: Bryant
+- [ ] **Task 7**: Add notification functionality.
+  - **Assigned to**: Bryant
+- [ ] **Task 8**: Write unit tests for the reminder feature.
+  - **Assigned to**: Bryant
+- [ ] **Task 9**: Conduct code review and improve code quality.
+  - **Assigned to**: Bryant
+- [ ] **Task 10**: Evaluate additional public Github Repositories to expand general knowledge
+  - **Assigned to**: Bryant
