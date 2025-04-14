@@ -34,5 +34,7 @@
   - **Assigned to**: Bryant
 - [ ] **Task 9**: Conduct code review and improve code quality.
   - **Assigned to**: Bryant
-- [ ] **Task 10**: Evaluate additional public Github Repositories to expand general knowledge
+- [ ] **Task 10**: Evaluate additional public Github Repositories to expand general knowledge.
+  - **Assigned to**: Bryant
+- [ ] **Task 11**: Create final file for project.
   - **Assigned to**: Bryant
