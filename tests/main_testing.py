@@ -1,3 +1,5 @@
+from datetime import datetime, timedelta
+
 def add_task(pet_name, task_type, date, time):
     """
     Add a new task to the pet's schedule.
@@ -53,3 +55,31 @@ def update_task(schedule, pet_name, old_task_type, new_task_type, new_date, new_
     if not updated:
         print(f"Task '{old_task_type}' for {pet_name} not found.")
     return schedule
+def check_reminders(schedule):
+    """
+    Print reminders for tasks happening within the next hour.
+    """
+    now = datetime.now()
+    for task in schedule:
+        task_time_str = f"{task['date']} {task['time']}"
+        try:
+            task_datetime = datetime.strptime(task_time_str, "%Y-%m-%d %H:%M")
+            if now <= task_datetime <= now + timedelta(hours=1):
+                print(f" Reminder: {task['task_type']} for {task['pet_name']} at {task['time']} today.")
+        except ValueError:
+            print(f"Skipping invalid task date/time: {task}")
+
+
+# ------------------ Demo (Optional for Playing Around) ------------------
+
+if __name__ == "__main__":
+    run_tests()
+
+    # Sample usage
+    schedule = []
+    schedule.append(add_task("Milo", "vet appointment", "2025-04-14", "16:00"))
+    schedule.append(add_task("Luna", "walk", "2025-04-14", "14:30"))
+
+    view_schedule(schedule)
+
+    check_reminders(schedule)  # This will alert if a task is due soon
