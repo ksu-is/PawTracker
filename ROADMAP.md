@@ -38,3 +38,9 @@
   - **Assigned to**: Bryant
 - [x] **Task 11**: Create final file for project.
   - **Assigned to**: Bryant
+
+## Sprint 3 
+### Goal: Develop and Test Core Features
+- [ ] **Task 11**: Continue to code and refine
+- [ ] **Task 12**: Continue to run and test code
+- [ ] **Task 13**: Create Single Powerpoint slide
