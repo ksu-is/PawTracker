@@ -41,6 +41,7 @@
 
 ## Sprint 3 
 ### Goal: Develop and Test Core Features
-- [ ] **Task 11**: Continue to code and refine
-- [ ] **Task 12**: Continue to run and test code
-- [ ] **Task 13**: Create Single Powerpoint slide
+- [ ] **Task 11**: Continue to code and refine.
+- [ ] **Task 12**: Continue to run and test code.
+- [ ] **Task 13**: put final code into FinalProject folder.
+- [ ] **Task 14**: Create Single Powerpoint slide.
