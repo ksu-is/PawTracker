@@ -46,3 +46,56 @@ def delete_task(schedule):
     else:
         print(f"No matching task found for '{task_type}' of {pet_name}.")
     return updated_schedule
+
+def update_task(schedule):
+    # Update a specific task in the schedule.
+    print("\n--- Update a Task ---")
+    pet_name = input("Enter the pet's name for the task to update: ")
+    old_task_type = input("Enter the current type of task: ")
+
+    updated = False
+    for i, task in enumerate(schedule):
+        if task['pet_name'].lower() == pet_name.lower() and task['task_type'].lower() == old_task_type.lower():
+            print("Begin updating task below...")
+            new_task_type = input("Enter the new task type: ")
+            new_date = input("Enter the new date (YYYY-MM-DD): ")
+            new_time = input("Enter the new time (HH:MM in 24-hour format): ")
+
+            schedule[i] = {
+                "pet_name": pet_name,
+                "task_type": new_task_type,
+                "date": new_date,
+                "time": new_time
+            }
+            updated = True
+            print(f"\nTask updated| [Pet Name: {pet_name}] [Task type: {new_task_type}] [Date: {new_date}] [Time: {new_time}]")
+            break
+
+    if not updated:
+        print(f"No task found for '{old_task_type}' of {pet_name}.")
+    return schedule
+
+def check_reminders(schedule):
+    # Print reminders for tasks happening within the next hour.
+    print("\n--- Check Reminders ---")
+    now = datetime.now()
+    for task in schedule:
+        try:
+            task_time_str = f"{task['date']} {task['time']}"
+            task_datetime = datetime.strptime(task_time_str, "%Y-%m-%d %H:%M")
+            if now <= task_datetime <= now + timedelta(hours=1):
+                print(f"Reminder: {task['task_type']} for {task['pet_name']} at {task['time']} today.")
+        except ValueError:
+            print(f"Skipping invalid task date/time: {task}")
+
+def main():
+    # Main function to run the Pet Care Scheduler.
+    schedule = []
+    while True:
+        print("\n--- Pet Care Scheduler ---")
+        print("1. Add Task")
+        print("2. View Schedule")
+        print("3. Delete Task")
+        print("4. Update Task")
+        print("5. Check Reminders")
+        print("6. Exit")
