@@ -99,3 +99,25 @@ def main():
         print("4. Update Task")
         print("5. Check Reminders")
         print("6. Exit")
+
+choice = input("Choose an option (1-6): ")
+        if choice == "1":
+            schedule = add_task(schedule)
+        elif choice == "2":
+            view_schedule(schedule)
+        elif choice == "3":
+            schedule = delete_task(schedule)
+        elif choice == "4":
+            schedule = update_task(schedule)
+        elif choice == "5":
+            check_reminders(schedule)
+        elif choice == "6":
+            print("Exiting the scheduler. Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please select a valid option.")
+
+# Run the program
+if __name__ == "__main__":
+    main()
+
